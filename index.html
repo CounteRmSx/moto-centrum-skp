@@ -6,6 +6,7 @@
     <title>Stacja Kontroli Pojazdów WRA/046/P - MOTO CENTRUM Milejowice</title>
     <meta name="description" content="Podstawowa Stacja Kontroli Pojazdów WRA/046/P MOTO CENTRUM w Milejowicach. Oferujemy profesjonalne i rzetelne badania techniczne pojazdów do 3.5t.">
     
+    <!-- Google Fonts & Font Awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,12 +16,21 @@
 </head>
 <body>
 
+    <!-- PASEK GÓRNY - ODNOŚNIK DO GŁÓWNEGO WARSZTATU -->
+    <div class="top-bar">
+        <div class="container">
+            <a href="https://mc.radom.pl" target="_blank" rel="noopener noreferrer" class="top-bar-link">
+                <i class="fa-solid fa-wrench"></i> Potrzebujesz naprawy mechanicznej lub wymiany opon? Odwiedź nasz serwis główny: <strong>mc.radom.pl</strong> <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i>
+            </a>
+        </div>
+    </div>
+
     <!-- NAGŁÓWEK I NAWIGACJA -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="assets/images/logo.png" alt="Logo MOTO CENTRUM Stacja Kontroli Pojazdów" class="logo-img" width="236" height="100">
+                    <img src="assets/images/logo.webp" alt="Logo MOTO CENTRUM Stacja Kontroli Pojazdów" class="logo-img" width="236" height="100">
                 </a>
             </div>
 
@@ -69,7 +79,7 @@
             <div class="container">
                 <div class="stats-grid">
                     <div class="stat-card">
-                        <i class="fa-solid fa-certificate stat-icon"></i>
+                        <i class="fa-solid fa-id-card stat-icon"></i>
                         <div class="stat-number">WRA/046/P</div>
                         <p class="stat-text">Numer ewidencyjny stacji</p>
                     </div>
@@ -96,58 +106,68 @@
         <section class="section-padding" id="o-nas">
             <div class="container">
                 <div class="about-grid align-start">
-                    <div class="about-text">
-                        <h2 class="section-title left-align">O naszej Stacji Kontroli Pojazdów</h2>
-                        <p>Witamy w Podstawowej Stacji Kontroli Pojazdów MOTO CENTRUM w Milejowicach. Doskonale wiemy, że sprawny pojazd to gwarancja bezpieczeństwa Twojego oraz Twoich bliskich na drodze.</p>
-                        <p>Nasza stacja wyposażona jest w certyfikowaną ścieżkę diagnostyczną. Badania techniczne przeprowadzamy sprawnie, skrupulatnie i w przyjaznej atmosferze.</p>
-                        
-                        <div class="about-features">
-                            <div class="feature-item">
-                                <i class="fa-solid fa-check"></i>
-                                <span>Nowoczesny sprzęt pomiarowy i diagnostyczny</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fa-solid fa-check"></i>
-                                <span>Wykwalifikowana kadra diagnostów z doświadczeniem</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fa-solid fa-check"></i>
-                                <span>Dogodny dojazd przy drodze ekspresowej S7</span>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Kolumna 1 (Lewa): Tekst O nas + Blok wyróżnika -->
+    <div class="about-text">
+        <h2 class="section-title left-align">O naszej Stacji Kontroli Pojazdów</h2>
+        <p>Witamy w Podstawowej Stacji Kontroli Pojazdów MOTO CENTRUM w Milejowicach. Doskonale wiemy, że sprawny pojazd to gwarancja bezpieczeństwa Twojego oraz Twoich bliskich na drodze.</p>
+        <p>Nasza stacja wyposażona jest w certyfikowaną ścieżkę diagnostyczną. Badania techniczne przeprowadzamy sprawnie, skrupulatnie i w przyjaznej atmosferze.</p>
 
-                    <!-- Karta informacyjna obok tekstu -->
-                    <div class="contact-info-card">
-                        <h3>Godziny Pracy & Kontakt</h3>
-                        <div class="info-item">
-                            <i class="fa-regular fa-clock"></i>
-                            <div>
-                                <h4>Godziny otwarcia SKP</h4>
-                                <p>Poniedziałek – Piątek: 09:00 – 18:00</p>
-                                <p>Sobota: 09:00 – 14:00</p>
-                            </div>
-                        </div>
-
-                        <div class="info-item">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <div>
-                                <h4>Lokalizacja</h4>
-                                <p>ul. Radomska 74<br>26-652 Milejowice</p>
-                            </div>
-                        </div>
-
-                        <div class="info-item">
-                            <i class="fa-solid fa-phone"></i>
-                            <div>
-                                <h4>Bezpośredni kontakt do diagnosty</h4>
-                                <a href="tel:+48661969623">661 969 623</a> (Kacper Niewiadomski)
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="about-features">
+            <div class="feature-item">
+                <i class="fa-solid fa-check"></i>
+                <span>Nowoczesny sprzęt pomiarowy i diagnostyczny</span>
             </div>
-        </section>
+            <div class="feature-item">
+                <i class="fa-solid fa-check"></i>
+                <span>Wykwalifikowana kadra diagnostów z doświadczeniem</span>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-check"></i>
+                <span>Dogodny dojazd przy drodze ekspresowej S7</span>
+            </div>
+        </div>
+
+        <!-- Wyróżnik znajduje się wewnątrz .about-text -->
+        <div class="about-highlight">
+            <i class="fa-solid fa-bolt highlight-icon"></i>
+            <div>
+                <h4>Przeglądy bez zbędnych kolejek</h4>
+                <p>Obsługujemy kierowców na bieżąco! Wystarczy przyjechać w godzinach otwarcia stacji – kompleksowa weryfikacja zawieszenia, hamulców, oświetlenia oraz analizy spalin zajmuje zazwyczaj zaledwie 15-20 minut.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kolumna 2 (Prawa): Niebieska karta kontaktowa -->
+    <div class="contact-info-card">
+        <img src="assets/images/skp_glowne.webp" alt="Wnętrze Stacji Kontroli Pojazdów MOTO CENTRUM" class="contact-card-img">
+        <h3>Godziny Pracy | Kontakt</h3>
+        
+        <div class="info-item">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+                <h4>Godziny otwarcia SKP</h4>
+                <p>Poniedziałek – Piątek: 09:00 – 18:00</p>
+                <p>Sobota: 09:00 – 14:00</p>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+                <h4>Lokalizacja</h4>
+                <p>ul. Radomska 74<br>26-652 Milejowice</p>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+                <h4>Bezpośredni kontakt do diagnosty</h4>
+                <a href="tel:+48661969623">661 969 623</a> (Kacper Niewiadomski)
+            </div>
+        </div>
+    </div>
+</div>
 
         <!-- SEKCJA ZAKRES BADAŃ (USŁUGI) -->
         <section class="section-padding bg-alt" id="uslugi">
@@ -207,6 +227,29 @@
             </div>
         </section>
 
+
+        <!-- SEKCJA GALERII / KARUZELA ZDJĘĆ -->
+        <section class="section-padding bg-alt" style="padding-top: 0;">
+            <div class="container">
+                <div class="image-slider">
+                    <div class="slider-track" id="slider-track">
+                        <div class="slider-slide">
+                            <img src="assets/images/skp_1.webp" alt="Ścieżka diagnostyczna SKP MOTO CENTRUM 1" loading="lazy">
+                        </div>
+                        <div class="slider-slide">
+                            <img src="assets/images/skp_2.webp" alt="Ścieżka diagnostyczna SKP MOTO CENTRUM 2" loading="lazy">
+                        </div>
+                        <div class="slider-slide">
+                            <img src="assets/images/skp_3.webp" alt="Ścieżka diagnostyczna SKP MOTO CENTRUM 3" loading="lazy">
+                        </div>
+                    </div>
+                    <button class="slider-btn prev" id="slider-prev" aria-label="Poprzednie zdjęcie"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="slider-btn next" id="slider-next" aria-label="Następne zdjęcie"><i class="fa-solid fa-chevron-right"></i></button>
+                    <div class="slider-indicators" id="slider-indicators"></div>
+                </div>
+            </div>
+        </section>
+
         <!-- SEKCJA CENNIK -->
         <section class="section-padding" id="cennik">
             <div class="container">
@@ -222,7 +265,7 @@
             </div>
         </section>
 
-        <!-- SEKCJA FAQ (AKORDEON DLA JS) -->
+        <!-- SEKCJA FAQ -->
         <section class="section-padding bg-alt" id="faq">
             <div class="container">
                 <h2 class="section-title">Często Zadawane Pytania (FAQ)</h2>
@@ -254,7 +297,7 @@
                             <i class="fa-solid fa-chevron-down faq-icon"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Nie ma konieczności wcześniejszego Umawiania się – obsługujemy kierowców na bieżąco. Jeśli jednak zależy Ci na konkretnej godzinie, możesz skorzystać z naszego formularza kontaktowego lub zadzwonić.</p>
+                            <p>Nie ma konieczności wcześniejszego umawiania się – obsługujemy kierowców na bieżąco. Jeśli jednak zależy Ci na konkretnej godzinie, możesz skorzystać z naszego formularza kontaktowego lub zadzwonić.</p>
                         </div>
                     </div>
 
@@ -272,7 +315,7 @@
             </div>
         </section>
 
-        <!-- SEKCJA KONTAKT I FORMULARZ REZERWACJI / ZAPYTANIA -->
+        <!-- SEKCJA KONTAKT I FORMULARZ -->
         <section class="section-padding" id="kontakt">
             <div class="container">
                 <h2 class="section-title">Skontaktuj się z nami</h2>
@@ -314,7 +357,7 @@
                     <!-- Mapa Google -->
                     <div class="contact-map">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.527318728954!2d26.2235!3d51.4391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4718f6f1c4000001%3A0x8898e0a3f6c8d28b!2sul.%20Radomska%2074%2C%2026-652%20Milejowice!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79860.2014023157!2d21.1000000!3d51.4150000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471887e4620fbd57%3A0x2863c0beff3d5cd2!2sul.%20Radomska%2074%2C%2026-652%20Milejowice!5e0!3m2!1spl!2spl!4v1710000000000!5m2!1spl!2spl" 
                             title="Lokalizacja Stacji Kontroli Pojazdów MOTO CENTRUM" 
                             allowfullscreen="" 
                             loading="lazy" 
@@ -344,6 +387,13 @@
                         <li><a href="#faq">Najczęstsze pytania</a></li>
                         <li><a href="#kontakt">Kontakt</a></li>
                     </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Usługi Warsztatowe</h3>
+                    <p class="mb-1" style="font-size: 0.9rem;">Szukasz mechaniki, serwisu opon lub pomocy drogowej?</p>
+                    <a href="https://mc.radom.pl" target="_blank" rel="noopener noreferrer" class="top-bar-link" style="color: var(--clr-accent-blue); font-weight: 600;">
+                        Odwiedź serwis główny mc.radom.pl &rarr;
+                    </a>
                 </div>
                 <div class="footer-col">
                     <h3>Dane Kontaktowe</h3>
