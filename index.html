@@ -3,11 +3,368 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOTO CENTRUM – Stacja Kontroli Pojazdów</title>
+    <title>Stacja Kontroli Pojazdów WRA/046/P - MOTO CENTRUM Milejowice</title>
+    <meta name="description" content="Podstawowa Stacja Kontroli Pojazdów WRA/046/P MOTO CENTRUM w Milejowicach. Oferujemy profesjonalne i rzetelne badania techniczne pojazdów do 3.5t.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" defer></script>
 </head>
 <body>
 
+    <!-- NAGŁÓWEK I NAWIGACJA -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Logo MOTO CENTRUM Stacja Kontroli Pojazdów" class="logo-img" width="236" height="100">
+                </a>
+            </div>
+
+            <!-- Nawigacja główna -->
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#o-nas">O nas</a></li>
+                    <li><a href="#uslugi">Zakres badań</a></li>
+                    <li><a href="#cennik">Cennik</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <!-- Przycisk zmiany motywu i hamburger mobilny -->
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn" aria-label="Zmień motyw strony">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button id="mobile-toggle" class="mobile-toggle" aria-label="Otwórz menu nawigacyjne" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SEKCJA HERO -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Stacja Kontroli Pojazdów</h1>
+                    <p class="subtitle">MOTO CENTRUM - Milejowice (WRA/046/P)</p>
+                    <p class="desc">Bezpieczeństwo na drodze zaczyna się od sprawnego samochodu. Przeprowadzamy kompleksowe i rzetelne przeglądy rejestracyjne.</p>
+                    <div class="hero-buttons">
+                        <a href="#kontakt" class="btn btn-primary">Umów przegląd</a>
+                        <a href="#uslugi" class="btn btn-outline-white">Zobacz ofertę</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KARTY STATYSTYK / INFORMACJI SZYBKICH -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fa-solid fa-certificate stat-icon"></i>
+                        <div class="stat-number">WRA/046/P</div>
+                        <p class="stat-text">Numer ewidencyjny stacji</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-car-side stat-icon"></i>
+                        <div class="stat-number">Do 3.5t</div>
+                        <p class="stat-text">Dopuszczalna masa całkowita</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-clock stat-icon"></i>
+                        <div class="stat-number">Soboty</div>
+                        <p class="stat-text">Czynne w godz. 09:00 - 14:00</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-square-check stat-icon"></i>
+                        <div class="stat-number">100%</div>
+                        <p class="stat-text">Certyfikowana ścieżka diagnostyczna</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEKCJA O NAS -->
+        <section class="section-padding" id="o-nas">
+            <div class="container">
+                <div class="about-grid align-start">
+                    <div class="about-text">
+                        <h2 class="section-title left-align">O naszej Stacji Kontroli Pojazdów</h2>
+                        <p>Witamy w Podstawowej Stacji Kontroli Pojazdów MOTO CENTRUM w Milejowicach. Doskonale wiemy, że sprawny pojazd to gwarancja bezpieczeństwa Twojego oraz Twoich bliskich na drodze.</p>
+                        <p>Nasza stacja wyposażona jest w certyfikowaną ścieżkę diagnostyczną. Badania techniczne przeprowadzamy sprawnie, skrupulatnie i w przyjaznej atmosferze.</p>
+                        
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Nowoczesny sprzęt pomiarowy i diagnostyczny</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Wykwalifikowana kadra diagnostów z doświadczeniem</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Dogodny dojazd przy drodze ekspresowej S7</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Karta informacyjna obok tekstu -->
+                    <div class="contact-info-card">
+                        <h3>Godziny Pracy & Kontakt</h3>
+                        <div class="info-item">
+                            <i class="fa-regular fa-clock"></i>
+                            <div>
+                                <h4>Godziny otwarcia SKP</h4>
+                                <p>Poniedziałek – Piątek: 09:00 – 18:00</p>
+                                <p>Sobota: 09:00 – 14:00</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Lokalizacja</h4>
+                                <p>ul. Radomska 74<br>26-652 Milejowice</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h4>Bezpośredni kontakt do diagnosty</h4>
+                                <a href="tel:+48661969623">661 969 623</a> (Kacper Niewiadomski)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEKCJA ZAKRES BADAŃ (USŁUGI) -->
+        <section class="section-padding bg-alt" id="uslugi">
+            <div class="container">
+                <h2 class="section-title">Zakres wykonywanych badań</h2>
+                <p class="section-subtitle">Jako Podstawowa Stacja Kontroli Pojazdów posiadamy uprawnienia do badania następujących kategorii pojazdów:</p>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fa-solid fa-car"></i></div>
+                            <h3 class="service-title">Samochody Osobowe i Dostawcze</h3>
+                            <p>Badania okresowe i techniczne pojazdów o dopuszczalnej masie całkowitej do 3.5 tony.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fa-solid fa-motorcycle"></i></div>
+                            <h3 class="service-title">Motocykle i Motorowery</h3>
+                            <p>Kompleksowe sprawdzanie stanu technicznego jednośladów przed sezonem i do dowodu rejestracyjnego.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fa-solid fa-gas-pump"></i></div>
+                            <h3 class="service-title">Pojazdy z Instalacją LPG / CNG</h3>
+                            <p>Przeglądy aut z instalacją gazową z weryfikacją szczelności oraz dokumentacji zbiornika.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fa-solid fa-plane-arrival"></i></div>
+                            <h3 class="service-title">Pojazdy z Zagranicy</h3>
+                            <p>Pierwsze badania techniczne w kraju dla pojazdów sprowadzonych z zagranicy.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fa-solid fa-trailer"></i></div>
+                            <h3 class="service-title">Badania Haków Holowniczych</h3>
+                            <p>Badania dodatkowe po montażu haka holowniczego w celu uzyskania wpisu w wydziale komunikacji.</p>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-content">
+                            <div class="service-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                            <h3 class="service-title">Badania Powypadkowe / Skierowania</h3>
+                            <p>Przeglądy pojazdów po kolizjach lub skierowanych przez organy kontroli ruchu drogowego (Policję/ITD).</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEKCJA CENNIK -->
+        <section class="section-padding" id="cennik">
+            <div class="container">
+                <h2 class="section-title">Urzędowy Cennik Badań</h2>
+                <div class="price-box">
+                    <p>Opłaty za badania techniczne pojazdów są regulowane odgórnie przez rozporządzenie Ministra Infrastruktury. Cennik jest ujednolicony i obowiązuje w identycznej kwocie na wszystkich stacjach kontroli w Polsce.</p>
+                    <div class="price-actions">
+                        <a href="https://mc.radom.pl/cennik_skp.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <i class="fa-solid fa-file-pdf"></i> Pobierz urzędowy cennik (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEKCJA FAQ (AKORDEON DLA JS) -->
+        <section class="section-padding bg-alt" id="faq">
+            <div class="container">
+                <h2 class="section-title">Często Zadawane Pytania (FAQ)</h2>
+                <div class="faq-accordion">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Co muszę ze sobą zabrać na badanie techniczne?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Na przegląd rejestracyjny należy zabrać Dowód Rejestracyjny pojazdu. W przypadku pojazdów z instalacją gazową (LPG) wymagane jest również aktualne świadectwo legalizacji zbiornika (tzw. decyzja TDT).</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Ile trwa badanie techniczne samochodu?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Standardowe badanie okresowe samochodu osobowego trwa około 15–20 minut. W tym czasie diagnosta weryfikuje stan zawieszenia, układu hamulcowego, kierowniczego, oświetlenia, spalin oraz spód pojazdu.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Czy muszę wcześniej rezerwować termin wizyty?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nie ma konieczności wcześniejszego Umawiania się – obsługujemy kierowców na bieżąco. Jeśli jednak zależy Ci na konkretnej godzinie, możesz skorzystać z naszego formularza kontaktowego lub zadzwonić.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Co się stanie, jeśli samochód nie przejdzie przeglądu?</span>
+                            <i class="fa-solid fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>W przypadku wykrycia usterek stwarzających zagrożenie, diagnosta wydaje zaświadczenie z wynikiem negatywnym. Właściciel ma 14 dni na usunięcie usterek i powrót na stację w celu ponownego sprawdzenia wyłącznie naprawionych elementów.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SEKCJA KONTAKT I FORMULARZ REZERWACJI / ZAPYTANIA -->
+        <section class="section-padding" id="kontakt">
+            <div class="container">
+                <h2 class="section-title">Skontaktuj się z nami</h2>
+                <div class="contact-grid">
+                    
+                    <!-- Formularz kontaktowy z walidacją w JS -->
+                    <div class="contact-form-container">
+                        <h3>Napisz do nas / Zapytaj o termin</h3>
+                        <form id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Imię i Nazwisko *</label>
+                                <input type="text" id="name" name="name" placeholder="np. Jan Kowalski" required>
+                                <span class="error-msg" id="name-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Numer telefonu *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="np. 600111222" required>
+                                <span class="error-msg" id="phone-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Adres E-mail *</label>
+                                <input type="email" id="email" name="email" placeholder="np. jan@example.com" required>
+                                <span class="error-msg" id="email-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Wiadomość / Uwagi *</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Opisz swoje zapytanie lub preferowany termin..." required></textarea>
+                                <span class="error-msg" id="message-error"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">Wyślij wiadomość</button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+
+                    <!-- Mapa Google -->
+                    <div class="contact-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.527318728954!2d26.2235!3d51.4391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4718f6f1c4000001%3A0x8898e0a3f6c8d28b!2sul.%20Radomska%2074%2C%2026-652%20Milejowice!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl" 
+                            title="Lokalizacja Stacji Kontroli Pojazdów MOTO CENTRUM" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- STOPKA -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>MOTO CENTRUM SKP</h3>
+                    <p>Podstawowa Stacja Kontroli Pojazdów WRA/046/P w Milejowicach. Rzetelność, profesjonalizm i certyfikowany sprzęt diagnostyczny.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Szybkie linki</h3>
+                    <ul class="footer-links">
+                        <li><a href="#o-nas">O nas</a></li>
+                        <li><a href="#uslugi">Zakres badań</a></li>
+                        <li><a href="#cennik">Cennik urzędowy</a></li>
+                        <li><a href="#faq">Najczęstsze pytania</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Dane Kontaktowe</h3>
+                    <ul class="footer-links">
+                        <li><i class="fa-solid fa-location-dot"></i> ul. Radomska 74, 26-652 Milejowice</li>
+                        <li><i class="fa-solid fa-phone"></i> 661 969 623 (Diagnosta SKP)</li>
+                        <li><i class="fa-solid fa-envelope"></i> motocentrum4@wp.pl</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MOTO CENTRUM Stacja Kontroli Pojazdów. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Przycisk powrotu na górę strony -->
+    <button id="back-to-top" class="back-to-top" aria-label="Powrót na górę strony">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
