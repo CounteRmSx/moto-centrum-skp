@@ -852,3 +852,186 @@ footer {
     margin-bottom: 0;
     color: var(--clr-text-muted);
 }
+
+/* ==========================================
+   === RESPONSYWNOŚĆ (MEDIA QUERIES / RWD) ===
+   ========================================== */
+
+/* --- TABLETY I MNIEJSZE EKRANY (max-width: 991px) --- */
+@media (max-width: 991px) {
+    .hero-content h1 {
+        font-size: 2.6rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .contact-info-card {
+        margin-bottom: 0;
+    }
+
+    .image-slider {
+        aspect-ratio: 16 / 9;
+    }
+}
+
+/* --- URZĄDZENIA MOBILNE (max-width: 768px) --- */
+@media (max-width: 768px) {
+    :root {
+        --nav-height: 70px;
+    }
+
+    .top-bar {
+        font-size: 0.78rem;
+        padding: 0.5rem 10px;
+        line-height: 1.4;
+    }
+
+    .logo-img {
+        height: 50px;
+    }
+
+    /* Wyświetlenie przycisku hamburgera */
+    .mobile-toggle {
+        display: flex;
+    }
+
+    /* Mobilne menu rozwijane */
+    .nav-menu {
+        position: fixed;
+        top: calc(var(--nav-height) + var(--topbar-height, 0px));
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - var(--nav-height));
+        background-color: var(--clr-card-bg);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.8rem;
+        transition: left var(--transition-smooth);
+        box-shadow: var(--shadow-md);
+        z-index: 999;
+        padding: 2rem 0;
+    }
+
+    /* Stan otwartego menu w JS */
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu a {
+        font-size: 1.1rem;
+    }
+
+    /* Hero mobilny */
+    .hero {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero-content .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-content .desc {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    /* Statystyki na urządzeniach mobilnych */
+    .stats-section {
+        margin-top: 2rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        padding: 1.4rem;
+    }
+
+    /* Sekcje i typografia */
+    .section-padding {
+        padding: 3.5rem 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-slider {
+        aspect-ratio: 4 / 3;
+    }
+
+    .slider-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+
+    .price-box {
+        padding: 1.8rem 1.2rem;
+    }
+
+    .faq-question {
+        font-size: 0.95rem;
+        padding: 1rem 1.2rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-links li i {
+        margin-right: 0.3rem;
+    }
+}
+
+/* --- BARDZO MAŁE EKRANY / TELEFONY 375px - 390px --- */
+@media (max-width: 390px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo-img {
+        height: 42px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.4rem;
+        font-size: 0.95rem;
+    }
+}
