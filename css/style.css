@@ -28,16 +28,110 @@
 
 /* Motyw Ciemny (Dark Mode) */
 body.dark-theme {
-    --clr-bg: #121212;
-    --clr-bg-alt: #1e1e1e;
-    --clr-card-bg: #242424;
-    --clr-text-main: #f0f0f0;
-    --clr-text-muted: #a0a0a0;
-    --clr-border: #333333;
-    --clr-input-bg: #2d2d2d;
-    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.5);
-    --shadow-hover: 0 15px 35px rgba(0, 86, 179, 0.3);
+    --clr-bg: #121216;
+    --clr-bg-alt: #1a1a20;
+    --clr-card-bg: #22222a;
+    --clr-text-main: #f0f0f4;
+    --clr-text-muted: #b0b0c0;
+    --clr-border: #333340;
+    --clr-input-bg: #2a2a35;
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.6);
+    --shadow-hover: 0 15px 35px rgba(0, 86, 179, 0.4);
+    
+    background-color: var(--clr-bg);
+    color: var(--clr-text-main);
+}
+
+/* Wybielenie logo w motywie ciemnym */
+body.dark-theme .logo-img {
+    filter: brightness(0) invert(1);
+}
+
+/* Sekcje i tła */
+body.dark-theme section {
+    background-color: var(--clr-bg);
+}
+
+body.dark-theme section.bg-alt {
+    background-color: var(--clr-bg-alt);
+}
+
+/* Nagłówki, napisy i punkty z ikonami */
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme .section-title,
+body.dark-theme .feature-item,
+body.dark-theme .feature-item span,
+body.dark-theme .about-highlight h4,
+body.dark-theme .contact-form-container h3,
+body.dark-theme .form-group label {
+    color: var(--clr-text-main) !important;
+}
+
+body.dark-theme p,
+body.dark-theme .about-text p,
+body.dark-theme .section-subtitle,
+body.dark-theme .stat-text,
+body.dark-theme .service-card p,
+body.dark-theme .price-box p,
+body.dark-theme .faq-answer p,
+body.dark-theme .about-highlight p {
+    color: var(--clr-text-muted);
+}
+
+/* Karty i bloki */
+body.dark-theme .price-box,
+body.dark-theme .stat-card,
+body.dark-theme .service-card,
+body.dark-theme .faq-item,
+body.dark-theme .about-highlight {
+    background-color: var(--clr-card-bg);
+    border-color: var(--clr-border);
+}
+
+body.dark-theme .faq-question {
+    color: var(--clr-text-main);
+}
+
+body.dark-theme .faq-answer {
+    background-color: var(--clr-bg-alt);
+}
+
+/* Formularz w motywie ciemnym */
+body.dark-theme .form-group input,
+body.dark-theme .form-group textarea {
+    background-color: var(--clr-input-bg);
+    color: var(--clr-text-main);
+    border-color: var(--clr-border);
+}
+
+body.dark-theme .form-group input::placeholder,
+body.dark-theme .form-group textarea::placeholder {
+    color: #888899;
+}
+
+/* Poprawka przycisków karuzeli w motywie ciemnym */
+body.dark-theme .slider-btn {
+    background-color: rgba(18, 18, 22, 0.85);
+    color: var(--clr-text-main);
+    border: 1px solid var(--clr-border);
+}
+
+body.dark-theme .slider-btn:hover {
+    background-color: var(--clr-primary);
+    color: #ffffff;
+    border-color: var(--clr-primary);
+}
+
+body.dark-theme .slider-indicator {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+body.dark-theme .slider-indicator.active {
+    background-color: var(--clr-primary);
 }
 
 /* === RESET I BAZA === */
@@ -853,10 +947,7 @@ footer {
     color: var(--clr-text-muted);
 }
 
-/* ==========================================
-   === RESPONSYWNOŚĆ (MEDIA QUERIES / RWD) ===
-   ========================================== */
-
+/*  === RESPONSYWNOŚĆ (MEDIA QUERIES / RWD) === */
 /* --- TABLETY I MNIEJSZE EKRANY (max-width: 991px) --- */
 @media (max-width: 991px) {
     .hero-content h1 {
